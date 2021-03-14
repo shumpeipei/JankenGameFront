@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Avenir Next";
+}
+
+header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 90px;
+}
+
+main {
+  background-color: #bdf7f1;
+  height: 600px;
+}
+
+footer {
+  background-color: #ceccf3;
+  height: 100px;
+}
+
+.logo{
+  font-size: 50px;
+}
+
+.text{
+  text-align: center;
+  font-size: 30px;
+}
+.box{
+  text-align: center;
+}
+
+.hand{
+  width: 20%;
+  display:inline-block;
+  margin: auto;
+  margin-right: auto;
+}
