@@ -4,41 +4,34 @@
     <meta charset="utf-8">
     <title>じゃんけん</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
-
-    <script>
-      function js_alert() {
-          alert("勝負はこれからだっ！!");
-      }
-    </script>
-
+    <script src = "./js/Janken.js"></script>
   </head>
 
   <body>
     
     <header>
       <div class="logo">じゃんけんげえむ</div>
-      
     </header>
     
 
     <main>
-      <p class="text" >君の出したい手はなにかな？</p>
-      <p class="text" >出したい手をクリックしよう！</p>  
+      <div class="text" >君の出したい手はなにかな？</p>
+      <div class="text" >出したい手をクリックしよう！</p>  
     
 
     
       <div class="box">
-     <img class="hand" onclick="js_alert()" src = "./src/goo.PNG" alt = "グー" title = "グー" />
-     <img class="hand" onclick="js_alert()" src = "./src/par.PNG" alt = "パー" title = "チョキ" />
-     <img class="hand" onclick="js_alert()" src = "./src/tyoki.PNG" alt = "チョキ" title = "パー" />
-
+        <img class="hand" onclick="main(0)" src = "./src/goo.png" alt = "グー" title = "グー" />
+        <img class="hand" onclick="main(1)" src = "./src/tyoki.png" alt = "チョキ" title = "チョキ" />
+        <img class="hand" onclick="main(2)" src = "./src/par.png" alt = "パー" title = "パー" />
      </div>
       
 
     </main>
 
-    <footer>
+    <footer>s
     </footer>
+  
   </body>
 
 </html>
