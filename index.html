@@ -4,32 +4,46 @@
     <meta charset="utf-8">
     <title>じゃんけん</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <script src = "./js/Janken.js"></script>
+    
   </head>
 
   <body>
     
     <header>
       <div class="logo">じゃんけんげえむ</div>
+      <script src = "./js/Janken.js"></script>
     </header>
     
 
     <main>
-      <div class="text" >君の出したい手はなにかな？</p>
-      <div class="text" >出したい手をクリックしよう！</p>  
-    
-
-    
+      <div class="text" >君の出したい手はなにかな？</div>
+      <div class="text" >出したい手をクリックしよう！</div>  
+        
       <div class="box">
-        <img class="hand" onclick="main(0)" src = "./src/goo.png" alt = "グー" title = "グー" />
-        <img class="hand" onclick="main(1)" src = "./src/tyoki.png" alt = "チョキ" title = "チョキ" />
-        <img class="hand" onclick="main(2)" src = "./src/par.png" alt = "パー" title = "パー" />
+        <img class="hand"  src = "./src/goo.png" alt = "グー" title = "グー" />
+        <img class="hand"  src = "./src/tyoki.png" alt = "チョキ" title = "チョキ" />
+        <img class="hand"  src = "./src/par.png" alt = "パー" title = "パー" />
      </div>
-      
 
+      <div class="button">
+        <button class ="goo_layout"   id = "goo">グー</button>
+        <button class ="choki_layout" id = "choki">チョキ</button>
+        <button class ="par_layout"   id = "par" >パー</button>
+      </div>
+     
+      <script>
+        let btn_goo = document.getElementById("goo");
+        let btn_choki = document.getElementById("choki");
+        let btn_par = document.getElementById("par");
+
+        btn_goo.addEventListener("click",function(){main(0)},false);
+        btn_choki.addEventListener("click",function(){main(1)},false);
+        btn_par.addEventListener("click",function(){main(2)},false);
+      </script>
     </main>
 
-    <footer>s
+    <footer>
+      <div class = "text">幸運を祈る！</div>
     </footer>
   
   </body>
