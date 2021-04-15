@@ -22,6 +22,7 @@ footer {
 
 .logo{
   font-size: 450%;
+  text-align: center
 }
 
 .text{
@@ -51,3 +52,8 @@ footer {
   margin: auto;
   margin-right: auto;
 }
+
+.hidden{
+  display:none;
+}
+

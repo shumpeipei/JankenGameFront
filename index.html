@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>じゃんけん</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
-    
+    <script src = "./js/Janken.js"></script>
   </head>
 
   <body>
     
     <header>
       <div class="logo">じゃんけんげえむ</div>
-      <script src = "./js/Janken.js"></script>
     </header>
     
 
@@ -26,20 +25,14 @@
      </div>
 
       <div class="button">
-        <button class ="goo_layout"   id = "goo">グー</button>
-        <button class ="choki_layout" id = "choki">チョキ</button>
-        <button class ="par_layout"   id = "par" >パー</button>
+        <button class ="goo_layout"   id = "グー">グー</button>
+        <button class ="choki_layout" id = "チョキ">チョキ</button>
+        <button class ="par_layout"   id = "パー" >パー</button>
       </div>
      
-      <script>
-        let btn_goo = document.getElementById("goo");
-        let btn_choki = document.getElementById("choki");
-        let btn_par = document.getElementById("par");
-
-        btn_goo.addEventListener("click",function(){main(0)},false);
-        btn_choki.addEventListener("click",function(){main(1)},false);
-        btn_par.addEventListener("click",function(){main(2)},false);
-      </script>
+     <p class="hidden" >あなたは グー コンピューターは チョキ</p>  
+     <p class="hidden" >あなたの勝ちだ！</p>  
+      
     </main>
 
     <footer>
