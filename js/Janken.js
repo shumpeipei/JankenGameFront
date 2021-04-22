@@ -12,16 +12,25 @@ function main(hand){
     const JUDGE = ['勝ち','負け','引き分け']; 
 
     playerHand = hand.target.id;
+
+
     //CPの手をランダム生成
     cpHand = JANKEN_HANDS[Math.floor(Math.random() * 3)] ;
 
     //勝敗判定
     result = judge(playerHand,cpHand);
 
+    //画像変更
+    changeImage(playerHand,cpHand);
+    
+    //センター画像を非表示
+    document.getElementById("img_choki").style.display="none";
+
+
     if(result === 2){
-        alert(`勝敗は引き分け\nあなたが出した手は${playerHand}\nコンピューターが出した手は${cpHand}`);
+        document.getElementById("test_judge").innerText = `勝敗は引き分け\nあなたが出した手は${playerHand}\nコンピューターが出した手は${cpHand}`;
     }else{
-        alert(`あなたは${JUDGE[result]} \nあなたが出した手は${playerHand}\nコンピューターが出した手は${cpHand}`);
+        document.getElementById("test_judge").innerText = `あなたは${JUDGE[result]} \nあなたが出した手は${playerHand}\nコンピューターが出した手は${cpHand}`;
     }  
 }
 
@@ -64,3 +73,33 @@ function jankenLoad(){
     btnChoki.addEventListener("click",main,false);
     btnPar.addEventListener("click",main,false);
 }
+
+//画像を切り替える関数
+function changeImage(player,cp){
+
+    let player_num = player;
+    let cp_num = cp;
+    let img_player = document.getElementById("img_goo");   
+    let img_cp     = document.getElementById("img_par");
+
+
+    if(player_num === "グー"){
+        img_player.src = "../HTML/src/goo.png";
+    }else if(player_num === "チョキ"){
+        img_player.src = "../HTML/src/tyoki.png";
+    }else{
+        img_player.src = "../HTML/src/par.png";
+    }
+
+    if(cp_num === "グー"){
+        img_cp.src = "../HTML/src/goo.png";
+    }else if(cp_num === "チョキ"){
+        img_cp.src = "../HTML/src/tyoki.png";
+    }else{
+        img_cp.src = "../HTML/src/par.png";
+    }
+
+}
+
+
+
