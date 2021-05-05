@@ -11,8 +11,10 @@ header {
 }
 
 main {
-  background-color: #bdf7f1;
+  /* background-color: #f8f8ff; */
   height: 100%;
+  padding: 1%;
+  /* margin: 1%; */
 }
 
 footer {
@@ -33,6 +35,7 @@ footer {
   text-align: center;
 }
 
+
 .button{
   text-align: center;
 }
@@ -43,6 +46,11 @@ footer {
 
 .par_layout{
   margin-left: 15%;
+}
+
+.reset_layout{
+  text-align: center;
+  margin-right: 5%;
 }
 
 
