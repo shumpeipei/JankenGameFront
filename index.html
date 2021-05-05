@@ -15,21 +15,30 @@
     
 
     <main>
-      <div class="text" >君の出したい手はなにかな？</p>
-      <div class="text" >出したい手をクリックしよう！</p>  
-    
-
-    
-      <div class="box">
-        <img class="hand" onclick="main(0)" src = "./src/goo.png" alt = "グー" title = "グー" />
-        <img class="hand" onclick="main(1)" src = "./src/tyoki.png" alt = "チョキ" title = "チョキ" />
-        <img class="hand" onclick="main(2)" src = "./src/par.png" alt = "パー" title = "パー" />
-     </div>
+      <div class="text" id = "test_judge">君の出したい手はなにかな？<br>
+        出したい手のボタンをクリックしよう！</div>
       
+        
+      <div class="img">
+        <img class="hand" id = "img_goo" src = "./src/goo.png" alt = "グー" title = "グー" />
+        <img class="hand" id = "img_choki" src = "./src/choki.png" alt = "チョキ" title = "チョキ" />
+        <img class="hand" id = "img_par" src = "./src/par.png" alt = "パー" title = "パー" />
+     </div>
 
+      <div class="button">
+        <button class ="goo_layout"   id = "グー">グー</button>
+        <button class ="choki_layout" id = "チョキ">チョキ</button>
+        <button class ="par_layout"   id = "パー" >パー</button>
+      </div>
+      <button class ="reset_layout" id = "reset">リセット</button>
+     
+     <p class="hidden" >あなたは グー コンピューターは チョキ</p>  
+     <p class="hidden" >あなたの勝ちだ！</p>  
+      
     </main>
 
-    <footer>s
+    <footer>
+      <div class = "text">幸運を祈る！</div>
     </footer>
   
   </body>

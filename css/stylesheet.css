@@ -11,8 +11,10 @@ header {
 }
 
 main {
-  background-color: #bdf7f1;
+  /* background-color: #f8f8ff; */
   height: 100%;
+  padding: 1%;
+  /* margin: 1%; */
 }
 
 footer {
@@ -22,15 +24,35 @@ footer {
 
 .logo{
   font-size: 450%;
+  text-align: center
 }
 
 .text{
   text-align: center;
   font-size: 100%;
 }
-.box{
+.img{
   text-align: center;
 }
+
+
+.button{
+  text-align: center;
+}
+
+.goo_layout{
+  margin-right: 15%;
+}
+
+.par_layout{
+  margin-left: 15%;
+}
+
+.reset_layout{
+  text-align: center;
+  margin-right: 5%;
+}
+
 
 .hand{
   width: 20%;
@@ -38,3 +60,8 @@ footer {
   margin: auto;
   margin-right: auto;
 }
+
+.hidden{
+  display:none;
+}
+
